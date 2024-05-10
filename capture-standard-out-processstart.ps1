@@ -3,6 +3,7 @@ $pinfo.FileName = "ping.exe"
 $pinfo.RedirectStandardError = $true
 $pinfo.RedirectStandardOutput = $true
 $pinfo.UseShellExecute = $false
+$pinfo.CreateNoWindow = $true
 $pinfo.Arguments = "localhost"
 $p = New-Object System.Diagnostics.Process
 $p.StartInfo = $pinfo
