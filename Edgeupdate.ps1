@@ -20,3 +20,8 @@ timeout 30
 
 "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --update
 
+#Skip Edge on Startup
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Edge\Main" -Name "DisableFirstRunScenario" -Value 1
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Edge\Main" -Name "DoNotTrack" -Value 1
+
+
